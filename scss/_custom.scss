@@ -1,1 +1,100 @@
-/* add custom child theme styles here */
+/* Custom css for template */
+
+body {
+    background-image: url("../assets/img/background/wood.jpg") !important;
+    height: 100% !important;
+    min-height: 100px !important;
+}
+
+footer div ul li a:first-child {
+    margin: 10px 0 0 10px;
+}
+
+footer div ul li a {
+    margin: 10px 0 0 0;
+}
+
+/* BEM Styles */
+
+.header__logo {
+    padding: 10px;
+}
+
+.header__logo--hide {
+    display: none;
+}
+
+.header__logo--show {
+    display: inital;
+}
+
+.header__background {
+    background-image: url("../assets/img/background/arches.png") !important;
+    @include box-shadow(black 2px 2px 10px);
+}
+
+.header__socialmedia {
+    margin: 10px 10px 0 0;
+}
+
+.main-content-area__section-background {
+    background-color: $white;
+    @include box-shadow(black 2px 2px 10px);
+}
+
+.main-content-area__section-wrapper-background {
+    background-image: url("../assets/img/background/yogamat_red.png") !important;
+    @include box-shadow(black 2px 2px 10px);
+}
+
+.main-content-area__section--offset {
+    margin-top: 181px;
+}
+
+.main-content-area__section--full-height {
+    height: 100% !important;
+    min-height: 100px !important;
+    display:table;
+}
+
+.main-content-area__section-mood-image {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.main-content-area__section-mood-image-label {
+    background-color: $secondary-color;
+    border: $primary-color 7px solid;
+    left: 15px;
+    padding: 0 10px;
+    position: absolute;
+    @include border-bottom-left-radius(300px);
+    @include border-bottom-right-radius(300px);
+    @include border-top-left-radius(300px);
+    @include border-top-right-radius(0px);
+    @include opacity(0.8);
+    top: 15px;
+}
+
+.main-content-area__section-mood-image-font {
+    font-size: rem-calc(29);
+    color: $primary-color;
+    font-family: "Pacifico",cursive;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.5;
+    text-rendering: optimizelegibility;
+}
+
+/* Custom css for timetable section */
+
+.event_header_link {
+    font-size: 13px !important;
+    text-decoration: underline !important;
+}
+
+/* Custom css for team section */
+
+.tshowcase-inner-box .tshowcase-box-info.ts-align-center .tshowcase-box-title a {
+    font-size: 0.9em;
+}
