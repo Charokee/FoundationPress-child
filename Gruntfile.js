@@ -2,27 +2,37 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-    sass: {
-      options: {
-        includePaths: ['../FoundationPress/bower_components/foundation/scss']
-      },
+watch: {
+      grunt: { files: ['Gruntfile.js'] },
+
+      sass: {
+        files: 'scss/**/*.scss',
+        tasks: ['compass']
+      }
+    },
+
+    compass: {
       dist: {
         options: {
-          outputStyle: 'compressed'
-        },
-        files: {
-          'css/app.css': 'scss/app.scss'
-        }        
+          config: 'config.rb'
+        }
       }
     },
 
     copy: {
-      main: {
+      scripts: {
         expand: true,
-        cwd: 'bower_components',
-        src: '**',
+        cwd: 'bower_components/',
+        src: '**/*.js',
         dest: 'js'
       },
+
+      maps: {
+        expand: true,
+        cwd: 'bower_components/',
+        src: '**/*.map',
+        dest: 'js'
+      }
     },
 
     uglify: {
@@ -35,23 +45,20 @@ module.exports = function(grunt) {
 
     concat: {
       options: {
-        separator: ';',
+        separator: ';'
       },
       dist: {
         src: [
           'js/foundation/js/foundation.min.js',
-          'js/init-foundation.js'
+          'js/custom/*.js'
         ],
 
-        dest: 'js/app.js',
-      },
+        dest: 'js/app.js'
+      }
 
     },
 
     watch: {
-      options: {
-        livereload: true
-      },
       grunt: { files: ['Gruntfile.js'] },
 
       sass: {
@@ -66,8 +73,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-compass');
 
-  grunt.registerTask('build', ['sass']);
-  grunt.registerTask('default', ['copy', 'uglify', 'concat', 'watch']);
-
+  grunt.registerTask('build', ['sass', 'copy', 'uglify', 'concat']);
+  grunt.registerTask('default', ['watch']);
 }
