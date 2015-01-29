@@ -2,8 +2,6 @@
 
 body {
     background-image: url("../assets/img/background/wood.jpg") !important;
-    height: 100% !important;
-    min-height: 100px !important;
 }
 
 footer div ul li a:first-child {
@@ -51,12 +49,6 @@ footer div ul li a {
     margin-top: 181px;
 }
 
-.main-content-area__section--full-height {
-    height: 100% !important;
-    min-height: 100px !important;
-    display:table;
-}
-
 .main-content-area__section-mood-image {
     margin-bottom: 20px;
     position: relative;
@@ -84,6 +76,10 @@ footer div ul li a {
     font-weight: normal;
     line-height: 1.5;
     text-rendering: optimizelegibility;
+}
+
+.detail-page--full-height {
+    min-height: 75vh !important;
 }
 
 /* Custom css for timetable section */
