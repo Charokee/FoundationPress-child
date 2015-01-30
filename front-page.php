@@ -12,7 +12,7 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
 ?>
 
 <div class="main-content-area__section-wrapper-background">
-    <section class="row main-content-area__section-background" id="ueberuns">
+    <section class="row main-content-area__section-background">
         <div class="main-content-area__section-mood-image" style="margin-bottom: 0px;">
             <ul class="example-orbit" data-orbit data-options="slide_number: false;">
                 <li>
@@ -71,6 +71,7 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
             </div>
         </div>
         <div class="small-12 columns">
+            <a href="#" name="ueberuns"></a>
             <?php
             $query = new WP_Query('pagename=ueber-uns');
             if ($query->have_posts()) {
@@ -86,7 +87,7 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
 </div>
 
 
-<section class="row main-content-area__section-background" id="aktuelles">
+<section class="row main-content-area__section-background">
     <div class="main-content-area__section-mood-image">
         <img src="/wp-content/themes/sinnlicht-yoga/assets/img/mood/sinnlicht_pinnwand.jpg" width="1000" height="365" alt="Sinnlicht Pinnwand" />
         <div class="main-content-area__section-mood-image-label">
@@ -94,6 +95,7 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
         </div>
     </div>
     <div class="small-12 columns">
+        <a href="#" name="aktuelles"></a>
         <?php
         $query = new WP_Query('pagename=aktuelles');
         if ($query->have_posts()) {
@@ -108,7 +110,7 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
 </section>
 
 <div class="main-content-area__section-wrapper-background">
-    <section class="row main-content-area__section-background" id="stundenplan">
+    <section class="row main-content-area__section-background">
         <div class="main-content-area__section-mood-image">
             <img src="./wp-content/themes/sinnlicht-yoga/assets/img/mood/sinnlicht_kueche.jpg" width="1000" height="365" alt="Sinnlicht K&uuml;che" />
             <div class="main-content-area__section-mood-image-label">
@@ -116,15 +118,16 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
             </div>
         </div>
         <div class="small-12 columns">
+            <a href="#" name="stundenplan"></a>
             <?php echo do_shortcode("[tt_timetable event_category='grosser-raum' filter_style='tabs' filter_kind='event_category' filter_label='' time_format='H:i' hide_hours_column='1' show_end_hour='1' event_layout='3' box_bg_color='B61E23' box_hover_bg_color='801619' filter_color='B61E23' hide_empty='1' disable_event_url='1' row_height='50' id='bigRoom' font_custom='Open Sans' font_size='11']"); ?>
         </div>
         <div class="small-12 columns">
-<?php echo do_shortcode("[tt_timetable event_category='kleiner-raum' filter_style='tabs' filter_kind='event_category' filter_label='' time_format='H:i' hide_hours_column='1' show_end_hour='1' event_layout='3' box_bg_color='B61E23' box_hover_bg_color='801619' filter_color='B61E23' hide_empty='1' disable_event_url='1' row_height='50' id='smallRoom' font_custom='Open Sans' font_size='11']"); ?>
+            <?php echo do_shortcode("[tt_timetable event_category='kleiner-raum' filter_style='tabs' filter_kind='event_category' filter_label='' time_format='H:i' hide_hours_column='1' show_end_hour='1' event_layout='3' box_bg_color='B61E23' box_hover_bg_color='801619' filter_color='B61E23' hide_empty='1' disable_event_url='1' row_height='50' id='smallRoom' font_custom='Open Sans' font_size='11']"); ?>
         </div>
     </section>
 </div>
 
-<section class="row main-content-area__section-background" id="team">
+<section class="row main-content-area__section-background">
     <div class="main-content-area__section-mood-image">
         <img src="./wp-content/themes/sinnlicht-yoga/assets/img/mood/sinnlicht_stuehle.jpg" width="1000" height="365" alt="Sinnlicht St&uuml;hle" />
         <div class="main-content-area__section-mood-image-label">
@@ -132,17 +135,18 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
         </div>
     </div>
     <div class="small-12 columns">
+        <a href="#" name="team"></a>
         <h1>Yoga</h1>
-<?php echo build_tshowcase('none', '0', '0', 'yoga', 'active', 'grid', 'img-square,text-center,img-above,4-columns,retro-box-theme', 'photo,name', 'false', '', 'true'); ?>
+        <?php echo build_tshowcase('none', '0', '0', 'yoga', 'active', 'grid', 'img-square,text-center,img-above,4-columns,retro-box-theme', 'photo,name', 'false', '', 'true'); ?>
     </div>
     <div class="small-12 columns">
         <h1>K&ouml;rperarbeit</h1>
-<?php echo build_tshowcase('none', '0', '0', 'koerperarbeit', 'active', 'grid', 'img-square,text-center,img-above,4-columns,retro-box-theme', 'photo,name', 'false', '', 'true'); ?>
+        <?php echo build_tshowcase('none', '0', '0', 'koerperarbeit', 'active', 'grid', 'img-square,text-center,img-above,4-columns,retro-box-theme', 'photo,name', 'false', '', 'true'); ?>
     </div>
 </section>
 
 <div class="main-content-area__section-wrapper-background">
-    <section class="row main-content-area__section-background" id="preise">
+    <section class="row main-content-area__section-background">
         <div class="main-content-area__section-mood-image">
             <img src="./wp-content/themes/sinnlicht-yoga/assets/img/mood/sinnlicht_yogi.jpg" width="1000" height="365" alt="Sinnlicht Yogi" />
             <div class="main-content-area__section-mood-image-label">
@@ -150,6 +154,7 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
             </div>
         </div>
         <div class="small-12 columns">
+            <a href="#" name="preise"></a>
             <?php
             $query = new WP_Query('pagename=preise');
             if ($query->have_posts()) {
@@ -164,7 +169,7 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
     </section>
 </div>
 
-<section class="row main-content-area__section-background" id="kontakt">
+<section class="row main-content-area__section-background">
     <div class="main-content-area__section-mood-image">
         <img src="./wp-content/themes/sinnlicht-yoga/assets/img/mood/sinnlicht_aufkleber.jpg" width="1000" height="365" alt="Sinnlicht Aufkleber" />
         <div class="main-content-area__section-mood-image-label">
@@ -173,6 +178,7 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
     </div>
     <form>
         <div class="medium-6 columns">
+            <a href="#" name="kontakt"></a>
             <label>Vorname:
                 <input type="text" />
             </label>
