@@ -1,6 +1,6 @@
 // Hiding or showing the logo dynamically
 $(document).ready(function($) {
-    logoOffset = $('.top-bar').offset().top;
+    logoOffset = 121;
     
     $(window).scroll(function() {
         var scrollTop = $(window).scrollTop();
@@ -42,8 +42,8 @@ $(function() {
   });
   
   //Executed on page load with URL containing an anchor tag.
-  if($(location.href.split("#")[1])) {
-        var target = $('#'+location.href.split("#")[1]);
+  if($(location.href.split('#')[1])) {
+        var target = $('#'+location.href.split('#')[1]);
         if (target.length) {
             $('html,body').animate({
               scrollTop: target.offset().top - headerOffset // offset height of header here too.
@@ -52,4 +52,9 @@ $(function() {
         }
     }
     
+});
+
+$( '.top-bar-menu li a' ).click(function() {
+    console.log('.top-bar-menu.left li a clicked!')
+    $('nav.top-bar').removeClass('expanded');
 });
