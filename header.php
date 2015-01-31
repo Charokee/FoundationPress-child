@@ -59,12 +59,19 @@
                     <nav class="top-bar" data-topbar role="navigation">
                         <ul class="title-area">
                             <li class="name">
-                                <h1><a href="#">Sinnlicht Yoga</a></h1>
+                                <h1><a href="<?php echo home_url(); ?>">Sinnlicht Yoga</a></h1>
                             </li>
                             <li class="toggle-topbar menu-icon"><a href="#">Men&uuml;</a></li>
                         </ul>
                         <section class="top-bar-section">                           
-                            <?php foundationPress_top_bar_l(); ?>
+                            <ul class="top-bar-menu left" id="menu-hauptmenue-medium">
+                                <li class="divider"></li><li class="menu-item"><a href="#ueberuns">&Uuml;ber uns</a></li>
+                                <li class="divider"></li><li class="menu-item"><a href="<?php echo home_url(); ?>#aktuelles">Aktuelles</a></li>
+                                <li class="divider"></li><li class="menu-item"><a href="<?php echo home_url(); ?>#stundenplan">Stundenplan</a></li>
+                                <li class="divider"></li><li class="menu-item"><a href="<?php echo home_url(); ?>#team">Team</a></li>
+                                <li class="divider"></li><li class="menu-item"><a href="<?php echo home_url(); ?>#preise">Preise</a></li>
+                                <li class="divider"></li><li class="menu-item"><a href="<?php echo home_url(); ?>#kontakt">Kontakt</a></li>
+                            </ul>
                         </section>
                     </nav>
                 </div>
@@ -72,7 +79,14 @@
                 <div class="show-for-medium-up">
                     <nav class="top-bar" data-topbar role="navigation">
                         <section class="top-bar-section">
-                            <?php foundationPress_top_bar_l(); ?>
+                            <ul class="top-bar-menu left" id="menu-hauptmenue-small">
+                                <li class="divider"></li><li class="menu-item"><a href="#ueberuns">&Uuml;ber uns</a></li>
+                                <li class="divider"></li><li class="menu-item"><a href="<?php echo home_url(); ?>#aktuelles">Aktuelles</a></li>
+                                <li class="divider"></li><li class="menu-item"><a href="<?php echo home_url(); ?>#stundenplan">Stundenplan</a></li>
+                                <li class="divider"></li><li class="menu-item"><a href="<?php echo home_url(); ?>#team">Team</a></li>
+                                <li class="divider"></li><li class="menu-item"><a href="<?php echo home_url(); ?>#preise">Preise</a></li>
+                                <li class="divider"></li><li class="menu-item"><a href="<?php echo home_url(); ?>#kontakt">Kontakt</a></li>
+                            </ul>
                         </section>
                         <a href="https://www.facebook.com/Sinnlicht.Yogazentrum" target="_blank">
                             <img src="/wp-content/themes/sinnlicht-yoga/assets/img/social/facebook.png" class="right header__socialmedia" width="30" height="30" alt="Facebook" />
