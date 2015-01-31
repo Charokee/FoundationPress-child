@@ -26,7 +26,7 @@ $(document).ready(function ($) {
     });
 
     // collapsing the mobile menu on menu item click
-    $('ul#menu-hauptmenue-medium li a').click(function () {
+    $('ul#menu-hauptmenu-medium li a').click(function () {
         $('nav.top-bar').removeClass('expanded');
     });
 

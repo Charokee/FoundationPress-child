@@ -64,7 +64,7 @@
                             <li class="toggle-topbar menu-icon"><a href="#">Men&uuml;</a></li>
                         </ul>
                         <section class="top-bar-section">                           
-                            <ul class="top-bar-menu left" id="menu-hauptmenue-medium">
+                            <ul class="top-bar-menu left" id="menu-hauptmenu-medium">
                                 <li class="divider"></li><li class="menu-item"><a href="#ueberuns">&Uuml;ber uns</a></li>
                                 <li class="divider"></li><li class="menu-item"><a href="<?php echo home_url(); ?>#aktuelles">Aktuelles</a></li>
                                 <li class="divider"></li><li class="menu-item"><a href="<?php echo home_url(); ?>#stundenplan">Stundenplan</a></li>
@@ -79,7 +79,7 @@
                 <div class="show-for-medium-up">
                     <nav class="top-bar" data-topbar role="navigation">
                         <section class="top-bar-section">
-                            <ul class="top-bar-menu left" id="menu-hauptmenue-small">
+                            <ul class="top-bar-menu left" id="menu-hauptmenu-small">
                                 <li class="divider"></li><li class="menu-item"><a href="#ueberuns">&Uuml;ber uns</a></li>
                                 <li class="divider"></li><li class="menu-item"><a href="<?php echo home_url(); ?>#aktuelles">Aktuelles</a></li>
                                 <li class="divider"></li><li class="menu-item"><a href="<?php echo home_url(); ?>#stundenplan">Stundenplan</a></li>
