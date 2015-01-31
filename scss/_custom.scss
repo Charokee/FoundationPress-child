@@ -1,5 +1,4 @@
 /* Custom css for template */
-
 body {
     background-image: url("../assets/img/background/wood.jpg") !important;
 }
@@ -13,7 +12,6 @@ footer div ul li a {
 }
 
 /* BEM Styles */
-
 .header__logo {
     padding: 10px;
 }
@@ -46,7 +44,16 @@ footer div ul li a {
 }
 
 .main-content-area__section--offset {
-    margin-top: 181px;
+    @media #{$small-only} {
+        margin-top: 60px;
+    }
+    @media #{$medium-up} {
+        margin-top: 181px; 
+    }
+}
+
+.main-content-area__section--offset-small {
+    margin-top: 60px;
 }
 
 .main-content-area__section-mood-image {
@@ -56,41 +63,61 @@ footer div ul li a {
 
 .main-content-area__section-mood-image-label {
     background-color: $secondary-color;
-    border: $primary-color 7px solid;
-    left: 15px;
-    padding: 0 10px;
     position: absolute;
     @include border-bottom-left-radius(300px);
     @include border-bottom-right-radius(300px);
     @include border-top-left-radius(300px);
     @include border-top-right-radius(0px);
     @include opacity(0.8);
-    top: 15px;
+    @media #{$small-only} {
+        border: $primary-color 3px solid;
+        left: 5px;
+        padding: 0 10px;
+        top: 5px;
+    }
+    @media #{$medium-up} {
+        border: $primary-color 7px solid;
+        left: 15px;
+        padding: 0 10px;
+        top: 15px;       
+    }
 }
 
 .main-content-area__section-mood-image-font {
-    font-size: rem-calc(29);
     color: $primary-color;
     font-family: "Pacifico",cursive;
     font-style: normal;
     font-weight: normal;
-    line-height: 1.5;
     text-rendering: optimizelegibility;
+    @media #{$small-only} {
+        font-size: rem-calc(15);
+        line-height: 1.5;
+    }
+    @media #{$medium-up} {
+        font-size: rem-calc(29);
+        line-height: 1.5;      
+    }
 }
 
 .detail-page--full-height {
     min-height: 75vh !important;
 }
 
-/* Custom css for timetable section */
+/* Custom css for slider */
+.orbit-container .orbit-slides-container > * .orbit-caption {
+    @media #{$small-only} {
+        font-size: 0.7rem !important;
+        padding: 0.1rem 0.2rem !important;
+    }
+}
 
+/* Custom css for timetable section */
 .event_header_link {
     font-size: 13px !important;
     text-decoration: underline !important;
 }
 
 /* Custom css for team section */
-
 .tshowcase-inner-box .tshowcase-box-info.ts-align-center .tshowcase-box-title a {
     font-size: 0.9em;
 }
