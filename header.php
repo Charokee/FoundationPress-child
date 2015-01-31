@@ -61,7 +61,7 @@
                             <li class="name">
                                 <h1><a href="<?php echo home_url(); ?>">Sinnlicht Yoga</a></h1>
                             </li>
-                            <li class="toggle-topbar menu-icon"><a href="#">Men&uuml;</a></li>
+                            <li class="toggle-topbar menu-icon"><a href="#"><span>Men&uuml;</span></a></li>
                         </ul>
                         <section class="top-bar-section">                           
                             <ul class="top-bar-menu left" id="menu-hauptmenu-medium">
