@@ -19,9 +19,9 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
                     <img src="/wp-content/themes/sinnlicht-yoga/assets/img/slider/slider_1.jpg" width="1000" height="365" alt="Sinnlicht Eingang" />                  
                     <?php
                     if (!empty($slider_1_caption)) {
-                        echo '<div class="orbit-caption">' . $slider_1_caption . '</div>';                         
+                        echo '<div class="orbit-caption">' . $slider_1_caption . '</div>';
                     } else {
-                        echo '';                    
+                        echo '';
                     }
                     ?>
                 </li>
@@ -29,9 +29,9 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
                     <img src="/wp-content/themes/sinnlicht-yoga/assets/img/slider/slider_2.jpg" width="1000" height="365" alt="Sinnlicht K&uuml;che" />
                     <?php
                     if (!empty($slider_2_caption)) {
-                        echo '<div class="orbit-caption">' . $slider_2_caption . '</div>';                         
+                        echo '<div class="orbit-caption">' . $slider_2_caption . '</div>';
                     } else {
-                        echo '';                    
+                        echo '';
                     }
                     ?>
                 </li>
@@ -39,9 +39,9 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
                     <img src="/wp-content/themes/sinnlicht-yoga/assets/img/slider/slider_3.jpg" width="1000" height="365" alt="Sinnlicht St&uuml;hle" />
                     <?php
                     if (!empty($slider_3_caption)) {
-                        echo '<div class="orbit-caption">' . $slider_3_caption . '</div>';                         
+                        echo '<div class="orbit-caption">' . $slider_3_caption . '</div>';
                     } else {
-                        echo '';                    
+                        echo '';
                     }
                     ?>
                 </li>
@@ -49,9 +49,9 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
                     <img src="/wp-content/themes/sinnlicht-yoga/assets/img/slider/slider_4.jpg" width="1000" height="365" alt="Sinnlicht Yogi" />
                     <?php
                     if (!empty($slider_4_caption)) {
-                        echo '<div class="orbit-caption">' . $slider_4_caption . '</div>';                         
+                        echo '<div class="orbit-caption">' . $slider_4_caption . '</div>';
                     } else {
-                        echo '';                    
+                        echo '';
                     }
                     ?>
                 </li>
@@ -59,9 +59,9 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
                     <img src="/wp-content/themes/sinnlicht-yoga/assets/img/slider/slider_5.jpg" width="1000" height="365" alt="Sinnlicht Aufkleber" />
                     <?php
                     if (!empty($slider_5_caption)) {
-                        echo '<div class="orbit-caption">' . $slider_5_caption . '</div>';                         
+                        echo '<div class="orbit-caption">' . $slider_5_caption . '</div>';
                     } else {
-                        echo '';                    
+                        echo '';
                     }
                     ?>
                 </li>
@@ -176,26 +176,26 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
             <span class="main-content-area__section-mood-image-font">Kontakt</span>
         </div>
     </div>
-    <form>
+    <form action="mailto:simon.aumayer@aboutlabs.de" onsubmit="return validateContactForm();">
         <div class="medium-6 columns">
             <a href="#" name="kontakt"></a>
             <label>Vorname:
-                <input type="text" />
+                <input type="text" name="firstName" id="firstName"/>
             </label>
         </div>
         <div class="medium-6 columns">
             <label>Nachname:
-                <input type="text" />
+                <input type="text" name="lastName" id="lastName"/>
             </label>
         </div>
         <div class="medium-12 columns">
             <label>E-Mail:
-                <input type="text" />
+                <input type="text" name="email" id="email"/>
             </label>
         </div>
         <div class="small-12 columns">
             <label>Nachricht:
-                <textarea rows="7"></textarea>
+                <textarea rows="7" name="message" id="message"></textarea>
             </label>
         </div>
         <div class="medium-12 columns">

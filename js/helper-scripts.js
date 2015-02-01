@@ -1,3 +1,33 @@
+// Validate contact form
+function validateContactForm() {
+
+    var fieldReturnValue = true;
+
+    $('.error').hide();
+
+    if ($('#firstName').val().length == 0) {
+        $('#firstName').after('<span class="error">Bitte tragen Sie Ihren Vornamen ein.</span>');
+        fieldReturnValue = false;
+    }
+
+    if ($('#lastName').val().length == 0) {
+        $('#lastName').after('<span class="error">Bitte tragen Sie Ihren Nachnamen ein.</span>');
+        fieldReturnValue = false;
+    }
+
+    if ($('#email').val().length == 0 || $('#email').val().indexOf('@') == -1 || $('#email').val().indexOf('.') == -1) {
+        $('#email').after('<span class="error">Bitte tragen Sie eine gültige E-Mail Adresse ein.</span>');
+        fieldReturnValue = false;
+    }
+
+    if ($('#message').val().length == 0) {
+        $('#message').after('<span class="error">Bitte tragen Sie Ihre Nachricht ein.</span>');
+        fieldReturnValue = false;
+    }
+    
+    return fieldReturnValue;
+}
+
 $(document).ready(function ($) {
 
     // Hiding or showing the logo dynamically

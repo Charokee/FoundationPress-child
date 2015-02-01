@@ -11,6 +11,10 @@ footer div ul li a {
     margin: 10px 0 0 0;
 }
 
+span.error, small.error {
+    background-color: #92181c !important;
+}
+
 /* BEM Styles */
 .header__logo {
     padding: 10px;
@@ -120,4 +124,12 @@ footer div ul li a {
 /* Custom css for team section */
 .tshowcase-inner-box .tshowcase-box-info.ts-align-center .tshowcase-box-title a {
     font-size: 0.9em;
+}
+
+.entry-content .entry-title {
+    margin: 10px 0px;
+}
+
+.ts-col_3 div img {
+    margin-bottom: 10px;
 }
