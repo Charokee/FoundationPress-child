@@ -3,3 +3,10 @@
 /bower_components/*
 /node_modules/*
 Thumbs.db
+js/app.js
+js/fastclick/
+js/foundation/
+js/jquery-placeholder/
+js/jquery.cookie/
+js/jquery/
+js/modernizr/
