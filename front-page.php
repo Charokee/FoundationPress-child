@@ -71,7 +71,7 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
             </div>
         </div>
         <div class="small-12 columns">
-            <a href="#" name="ueberuns"></a>
+            <a href="#ueberuns" name="ueberuns"></a>
             <?php
             $query = new WP_Query('pagename=ueber-uns');
             if ($query->have_posts()) {
@@ -95,7 +95,7 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
         </div>
     </div>
     <div class="small-12 columns">
-        <a href="#" name="aktuelles"></a>
+        <a href="#aktuelles" name="aktuelles"></a>
         <?php
         $query = new WP_Query('pagename=aktuelles');
         if ($query->have_posts()) {
@@ -118,7 +118,7 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
             </div>
         </div>
         <div class="small-12 columns">
-            <a href="#" name="stundenplan"></a>
+            <a href="#stundenplan" name="stundenplan"></a>
             <?php echo do_shortcode("[tt_timetable event_category='grosser-raum' filter_style='tabs' filter_kind='event_category' filter_label='' time_format='H:i' hide_hours_column='1' show_end_hour='1' event_layout='3' box_bg_color='B61E23' box_hover_bg_color='801619' filter_color='B61E23' hide_empty='1' disable_event_url='1' row_height='50' id='bigRoom' font_custom='Open Sans' font_size='11']"); ?>
         </div>
         <div class="small-12 columns">
@@ -135,7 +135,7 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
         </div>
     </div>
     <div class="small-12 columns">
-        <a href="#" name="team"></a>
+        <a href="#team" name="team"></a>
         <h1>Yoga</h1>
         <?php echo build_tshowcase('none', '0', '0', 'yoga', 'active', 'grid', 'img-square,text-center,img-above,4-columns,retro-box-theme', 'photo,name', 'false', '', 'true'); ?>
     </div>
@@ -154,7 +154,7 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
             </div>
         </div>
         <div class="small-12 columns">
-            <a href="#" name="preise"></a>
+            <a href="#preise" name="preise"></a>
             <?php
             $query = new WP_Query('pagename=preise');
             if ($query->have_posts()) {
@@ -176,32 +176,32 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
             <span class="main-content-area__section-mood-image-font">Kontakt</span>
         </div>
     </div>
-    <form action="mailto:simon.aumayer@aboutlabs.de" onsubmit="return validateContactForm();">
+    <form action="../../sendMail.php" method="post" onsubmit="return validateContactForm();">
         <div class="medium-6 columns">
-            <a href="#" name="kontakt"></a>
+            <a href="#kontakt" name="kontakt"></a>
             <label>Vorname:
-                <input type="text" name="firstName" id="firstName"/>
+                <input type="text" name="formFirstName" id="formFirstName"/>
             </label>
         </div>
         <div class="medium-6 columns">
             <label>Nachname:
-                <input type="text" name="lastName" id="lastName"/>
+                <input type="text" name="formLastName" id="formLastName"/>
             </label>
         </div>
         <div class="medium-12 columns">
             <label>E-Mail:
-                <input type="text" name="email" id="email"/>
+                <input type="text" name="formEmail" id="formEmail"/>
             </label>
         </div>
         <div class="small-12 columns">
             <label>Nachricht:
-                <textarea rows="7" name="message" id="message"></textarea>
+                <textarea rows="7" name="formMessage" id="formMessage"></textarea>
             </label>
         </div>
         <div class="medium-12 columns">
             <label>Newsletter abonnieren:</label>
-            <input id="newsletter" type="checkbox" checked="checked" />
-            <label for="newsletter">Ja</label>
+            <input name="formNewsletter" id="formNewsletter" type="checkbox" checked="checked" />
+            <label for="formNewsletter">Ja</label>
         </div>
         <div class="medium-12 columns">
             <input type="submit" value="Absenden" class="button" />
