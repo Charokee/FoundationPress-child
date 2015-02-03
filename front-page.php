@@ -207,7 +207,16 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
             <input type="submit" value="Absenden" class="button" />
         </div>
         <div class="medium-4 columns">
-            <p>Sinnlicht Yogazentrum<br/>Stahlheimer Strasse 4<br/>10439 Berlin<br/>Am Humannplatz<br/>Telefon: +49 17 34 72 38 41<br/><br/>Anfahrt:<ul><li>S-/U-Bahnhof Schönhauser-Allee</li><li>Tram 12 (Station Humannplatz)</li><br/></p>
+            <?php
+            $query = new WP_Query('pagename=kontakt');
+            if ($query->have_posts()) {
+                while ($query->have_posts()) {
+                    $query->the_post();
+                    the_content();
+                }
+            }
+            wp_reset_postdata();
+            ?>
         </div>
         <div class="medium-8 columns">
             <div id="map-container" class="main-content-area__map-container show-for-medium-up"></div>
