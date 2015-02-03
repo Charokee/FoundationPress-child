@@ -3,6 +3,12 @@ body {
     background-image: url("../assets/img/background/wood.jpg") !important;
 }
 
+html, body {
+    min-height: 100% !important; 
+    height: 100% !important;
+    height: auto !important;
+}
+
 footer div ul li a:first-child {
     margin: 10px 0 0 10px;
 }
@@ -101,6 +107,15 @@ span.error {
         font-size: rem-calc(29);
         line-height: 1.5;      
     }
+}
+
+.main-content-area__map-container {
+    height: 0;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    padding-bottom: 35%;
+    padding-top: 1.5625rem;
+    position: relative;
 }
 
 .detail-page--full-height {

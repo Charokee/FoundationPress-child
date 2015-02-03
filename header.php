@@ -37,10 +37,11 @@
             ?></title>
 
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/app.css" />
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 
         <?php wp_head(); ?>
     </head>
-    <body <?php body_class(); ?>>
+    <body onload="initializeGoogleMaps();"<?php body_class(); ?>>
         <?php do_action('foundationPress_after_body'); ?>
 
         <?php do_action('foundationPress_layout_start'); ?>

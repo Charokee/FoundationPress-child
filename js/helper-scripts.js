@@ -1,3 +1,21 @@
+// Initialize google maps
+function initializeGoogleMaps() {
+    var latlng = new google.maps.LatLng(52.55028, 13.42261);
+    var myOptions = {
+        zoom: 16,
+        center: latlng,
+        panControl: true,
+        zoomControl: true,
+        scaleControl: true,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById('map-container'), myOptions);
+    var marker = new google.maps.Marker({
+        position: latlng,
+        map: map
+    });
+}
+
 // Validate contact form
 function validateContactForm() {
 
@@ -5,26 +23,26 @@ function validateContactForm() {
 
     $('.error').hide();
 
-    if ($('#firstName').val().length == 0) {
-        $('#firstName').after('<span class="error">Bitte tragen Sie Ihren Vornamen ein.</span>');
+    if ($('#formFirstName').val().length == 0) {
+        $('#formFirstName').after('<span class="error">Bitte tragen Sie Ihren Vornamen ein.</span>');
         fieldReturnValue = false;
     }
 
-    if ($('#lastName').val().length == 0) {
-        $('#lastName').after('<span class="error">Bitte tragen Sie Ihren Nachnamen ein.</span>');
+    if ($('#formLastName').val().length == 0) {
+        $('#formLastName').after('<span class="error">Bitte tragen Sie Ihren Nachnamen ein.</span>');
         fieldReturnValue = false;
     }
 
-    if ($('#email').val().length == 0 || $('#email').val().indexOf('@') == -1 || $('#email').val().indexOf('.') == -1) {
-        $('#email').after('<span class="error">Bitte tragen Sie eine gültige E-Mail Adresse ein.</span>');
+    if ($('#formEmail').val().length == 0 || $('#formEmail').val().indexOf('@') == -1 || $('#formEmail').val().indexOf('.') == -1) {
+        $('#formEmail').after('<span class="error">Bitte tragen Sie eine gültige E-Mail Adresse ein.</span>');
         fieldReturnValue = false;
     }
 
-    if ($('#message').val().length == 0) {
-        $('#message').after('<span class="error">Bitte tragen Sie Ihre Nachricht ein.</span>');
+    if ($('#formMessage').val().length == 0) {
+        $('#formMessage').after('<span class="error">Bitte tragen Sie Ihre Nachricht ein.</span>');
         fieldReturnValue = false;
     }
-    
+
     return fieldReturnValue;
 }
 
@@ -60,8 +78,10 @@ $(document).ready(function ($) {
         $('nav.top-bar').removeClass('expanded');
     });
 
-    // Scrolling to anchors in document with Offset
+    // Smooth scrolling to anchors links with offset
     $(function () {
+
+        var target = 0;
 
         if ($(window).innerWidth() <= 784) {
             headerOffset = 40;
@@ -69,29 +89,16 @@ $(document).ready(function ($) {
             headerOffset = 60;
         }
 
+        // Executed on click with URL containing an anchor tag
         $('a[href*=#]:not([href=#])').click(function () {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top - headerOffset // offsets for fixed header
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-
-        //Executed on page load with URL containing an anchor tag.
-        if ($(location.href.split('#')[1])) {
-            var target = $('#' + location.href.split('#')[1]);
+            target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
             if (target.length) {
                 $('html,body').animate({
-                    scrollTop: target.offset().top - headerOffset // offset height of header here too.
+                    scrollTop: target.offset().top - headerOffset
                 }, 1000);
-                return false;
             }
-        }
+        });
 
     });
 
