@@ -78,11 +78,10 @@ $(document).ready(function ($) {
         $('nav.top-bar').removeClass('expanded');
     });
 
-    // Smooth scrolling to anchors links with offset
+    // Scrolling to anchors links
     $(function () {
 
-        var target = 0;
-
+        // Header offset
         if ($(window).innerWidth() <= 784) {
             headerOffset = 40;
         } else {
@@ -91,7 +90,7 @@ $(document).ready(function ($) {
 
         // Executed on click with URL containing an anchor tag
         $('a[href*=#]:not([href=#])').click(function () {
-            target = $(this.hash);
+            var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
             if (target.length) {
                 $('html,body').animate({
@@ -99,6 +98,16 @@ $(document).ready(function ($) {
                 }, 1000);
             }
         });
+
+    });
+
+    // Executed on page load with URL containing an anchor tag
+    $(window).load(function () {
+
+        var anchor = window.location.hash;
+        if (anchor.length) {
+            location.href = anchor;
+        }
 
     });
 
