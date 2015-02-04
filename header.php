@@ -37,14 +37,33 @@
             ?></title>
 
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/app.css" />
+
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-59325692-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 
-        <?php wp_head(); ?>
+<?php wp_head(); ?>
     </head>
     <body onload="initializeGoogleMaps();"<?php body_class(); ?>>
-        <?php do_action('foundationPress_after_body'); ?>
+<?php do_action('foundationPress_after_body'); ?>
 
-        <?php do_action('foundationPress_layout_start'); ?>
+<?php do_action('foundationPress_layout_start'); ?>
 
         <header class="contain-to-grid">
             <div class="row header__background">
@@ -102,4 +121,4 @@
         </header>
 
         <section class="container" role="document">
-            <?php do_action('foundationPress_after_header'); ?>
+<?php do_action('foundationPress_after_header'); ?>
