@@ -16,7 +16,7 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
         <div class="main-content-area__section-mood-image" style="margin-bottom: 0px;">
             <ul class="example-orbit" data-orbit data-options="slide_number: false;">
                 <li>
-                    <img src="/wp-content/themes/sinnlicht-yoga/assets/img/slider/slider_1.jpg" width="1000" height="365" alt="Sinnlicht Eingang" />                  
+                    <img src="/wp-content/uploads/slider_1.jpg" width="1000" height="365" alt="Slider 1" />                  
                     <?php
                     if (!empty($slider_1_caption)) {
                         echo '<div class="orbit-caption">' . $slider_1_caption . '</div>';
@@ -26,7 +26,7 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
                     ?>
                 </li>
                 <li class="active">
-                    <img src="/wp-content/themes/sinnlicht-yoga/assets/img/slider/slider_2.jpg" width="1000" height="365" alt="Sinnlicht K&uuml;che" />
+                    <img src="/wp-content/uploads/slider_2.jpg" width="1000" height="365" alt="Slider 2" />
                     <?php
                     if (!empty($slider_2_caption)) {
                         echo '<div class="orbit-caption">' . $slider_2_caption . '</div>';
@@ -36,7 +36,7 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
                     ?>
                 </li>
                 <li>
-                    <img src="/wp-content/themes/sinnlicht-yoga/assets/img/slider/slider_3.jpg" width="1000" height="365" alt="Sinnlicht St&uuml;hle" />
+                    <img src="/wp-content/uploads/slider_3.jpg" width="1000" height="365" alt="Slider 3" />
                     <?php
                     if (!empty($slider_3_caption)) {
                         echo '<div class="orbit-caption">' . $slider_3_caption . '</div>';
@@ -46,7 +46,7 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
                     ?>
                 </li>
                 <li class="active">
-                    <img src="/wp-content/themes/sinnlicht-yoga/assets/img/slider/slider_4.jpg" width="1000" height="365" alt="Sinnlicht Yogi" />
+                    <img src="/wp-content/uploads/slider_4.jpg" width="1000" height="365" alt="Slider 4" />
                     <?php
                     if (!empty($slider_4_caption)) {
                         echo '<div class="orbit-caption">' . $slider_4_caption . '</div>';
@@ -56,7 +56,7 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
                     ?>
                 </li>
                 <li class="active">
-                    <img src="/wp-content/themes/sinnlicht-yoga/assets/img/slider/slider_5.jpg" width="1000" height="365" alt="Sinnlicht Aufkleber" />
+                    <img src="/wp-content/uploads/slider_5.jpg" width="1000" height="365" alt="Slider 5" />
                     <?php
                     if (!empty($slider_5_caption)) {
                         echo '<div class="orbit-caption">' . $slider_5_caption . '</div>';
@@ -89,7 +89,7 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
 
 <section class="row main-content-area__section-background">
     <div class="main-content-area__section-mood-image">
-        <img src="/wp-content/themes/sinnlicht-yoga/assets/img/mood/sinnlicht_pinnwand.jpg" width="1000" height="365" alt="Sinnlicht Pinnwand" />
+        <img src="/wp-content/uploads/mood_1.jpg" width="1000" height="365" alt="Mood 1" />
         <div class="main-content-area__section-mood-image-label">
             <span class="main-content-area__section-mood-image-font">Aktuelles</span>
         </div>
@@ -112,7 +112,7 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
 <div class="main-content-area__section-wrapper-background">
     <section class="row main-content-area__section-background">
         <div class="main-content-area__section-mood-image">
-            <img src="./wp-content/themes/sinnlicht-yoga/assets/img/mood/sinnlicht_kueche.jpg" width="1000" height="365" alt="Sinnlicht K&uuml;che" />
+            <img src="/wp-content/uploads/mood_2.jpg" width="1000" height="365" alt="Mood 2" />
             <div class="main-content-area__section-mood-image-label">
                 <span class="main-content-area__section-mood-image-font">Stundenplan</span>
             </div>
@@ -129,7 +129,7 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
 
 <section class="row main-content-area__section-background">
     <div class="main-content-area__section-mood-image">
-        <img src="./wp-content/themes/sinnlicht-yoga/assets/img/mood/sinnlicht_stuehle.jpg" width="1000" height="365" alt="Sinnlicht St&uuml;hle" />
+        <img src="/wp-content/uploads/mood_3.jpg" width="1000" height="365" alt="Mood 3" />
         <div class="main-content-area__section-mood-image-label">
             <span class="main-content-area__section-mood-image-font">Team</span>
         </div>
@@ -148,7 +148,7 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
 <div class="main-content-area__section-wrapper-background">
     <section class="row main-content-area__section-background">
         <div class="main-content-area__section-mood-image">
-            <img src="./wp-content/themes/sinnlicht-yoga/assets/img/mood/sinnlicht_yogi.jpg" width="1000" height="365" alt="Sinnlicht Yogi" />
+            <img src="/wp-content/uploads/mood_4.jpg" width="1000" height="365" alt="Mood 4" />
             <div class="main-content-area__section-mood-image-label">
                 <span class="main-content-area__section-mood-image-font">Preise</span>
             </div>
@@ -171,7 +171,7 @@ $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
 
 <section class="row main-content-area__section-background">
     <div class="main-content-area__section-mood-image">
-        <img src="./wp-content/themes/sinnlicht-yoga/assets/img/mood/sinnlicht_aufkleber.jpg" width="1000" height="365" alt="Sinnlicht Aufkleber" />
+        <img src="/wp-content/uploads/mood_5.jpg" width="1000" height="365" alt="Mood 5" />
         <div class="main-content-area__section-mood-image-label">
             <span class="main-content-area__section-mood-image-font">Kontakt</span>
         </div>
