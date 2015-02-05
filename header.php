@@ -52,6 +52,7 @@
             })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
             ga('create', 'UA-59325692-1', 'auto');
+            ga('set', 'anonymizeIp', true);
             ga('send', 'pageview');
 
         </script>
@@ -70,7 +71,7 @@
                 <div class="row show-for-medium-up" id="logo">
                     <div class="small-12 small-centered columns text-center">
                         <a href="<?php echo home_url(); ?>">
-                            <img src="/wp-content/themes/sinnlicht-yoga/assets/img/logo/sinnlicht_logo.png" class="header__logo" width="400" height="106" alt="Sinnlicht Yoga & K&ouml;rperarbeit" />
+                            <img src="/wp-content/themes/sinnlicht-yoga/assets/img/logo/sinnlicht_logo_medium.png" class="header__logo" width="400" height="106" alt="Sinnlicht Yoga & K&ouml;rperarbeit" />
                         </a>
                     </div>
                 </div>
@@ -79,7 +80,7 @@
                     <nav class="top-bar" data-topbar role="navigation">
                         <ul class="title-area">
                             <li class="name">
-                                <h1><a href="<?php echo home_url(); ?>">Sinnlicht Yoga</a></h1>
+                                <h1><a href="<?php echo home_url(); ?>"><img src="/wp-content/themes/sinnlicht-yoga/assets/img/logo/sinnlicht_logo_small.png" width="151" height="40" alt="Sinnlicht Yoga & K&ouml;rperarbeit" /></a></h1>
                             </li>
                             <li class="toggle-topbar menu-icon"><a href="#"><span>Men&uuml;</span></a></li>
                         </ul>
