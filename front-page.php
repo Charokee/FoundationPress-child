@@ -9,12 +9,14 @@ $slider_2_caption = get_post_meta($captionPageId, 'slider_2_caption', true);
 $slider_3_caption = get_post_meta($captionPageId, 'slider_3_caption', true);
 $slider_4_caption = get_post_meta($captionPageId, 'slider_4_caption', true);
 $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
+$timer_speed = get_post_meta($captionPageId, 'timer_speed', true);
+if (empty($timer_speed)) {$timer_speed = 10000;}
 ?>
 
 <div class="main-content-area__section-wrapper-background">
     <section class="row main-content-area__section-background">
         <div class="main-content-area__section-mood-image" style="margin-bottom: 0px;">
-            <ul class="example-orbit" data-orbit data-options="slide_number: false;">
+            <ul class="example-orbit" data-orbit data-options="slide_number: false; timer_speed: <?php echo "$timer_speed"; ?>;">
                 <li>
                     <img src="/wp-content/uploads/slider_1.jpg" width="1000" height="365" alt="Slider 1" />                  
                     <?php
