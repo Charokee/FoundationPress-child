@@ -10,7 +10,9 @@ $slider_3_caption = get_post_meta($captionPageId, 'slider_3_caption', true);
 $slider_4_caption = get_post_meta($captionPageId, 'slider_4_caption', true);
 $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
 $timer_speed = get_post_meta($captionPageId, 'timer_speed', true);
-if (empty($timer_speed)) {$timer_speed = 10000;}
+if (empty($timer_speed)) {
+    $timer_speed = 10000;
+}
 ?>
 
 <div class="main-content-area__section-wrapper-background">
@@ -84,6 +86,9 @@ if (empty($timer_speed)) {$timer_speed = 10000;}
             }
             wp_reset_postdata();
             ?>
+        </div>
+        <div class="small-12 columns">
+            <iframe src="http://www.facebook.com/plugins/like.php?href=http://www.sinnlicht-yoga.de&layout=button_count&show_faces=true&action=like&colorscheme=light" style="width:300px;height:30px;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
         </div>
     </section>
 </div>
