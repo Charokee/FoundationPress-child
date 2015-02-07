@@ -1,1 +1,1 @@
-# Theme for 'Sinnlicht Yoga & Körperarbeit' based on the FoundationPress Child Theme (https://github.com/thetrickster/FoundationPress-child)
+Theme for 'Sinnlicht Yoga & Körperarbeit' (http://www.sinnlicht-yoga.de) based on the FoundationPress Child Theme (https://github.com/thetrickster/FoundationPress-child)

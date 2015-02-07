@@ -2,7 +2,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-watch: {
+	watch: {
       grunt: { files: ['Gruntfile.js'] },
 
       sass: {
@@ -16,6 +16,20 @@ watch: {
         options: {
           config: 'config.rb'
         }
+      }
+    },
+	
+    sass: {
+      options: {
+        includePaths: ['bower_components/foundation/scss']
+      },
+      dist: {
+        options: {
+          outputStyle: 'compressed'
+        },
+        files: {
+          'css/app.css': 'scss/app.scss'
+        }        
       }
     },
 
@@ -75,6 +89,7 @@ watch: {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-compass');
 
-  grunt.registerTask('build', ['sass', 'copy', 'uglify', 'concat']);
+  //grunt.registerTask('build', ['sass', 'copy', 'uglify', 'concat']);
+  grunt.registerTask('build', ['copy', 'uglify', 'concat']);
   grunt.registerTask('default', ['watch']);
 }
