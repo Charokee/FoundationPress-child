@@ -9,6 +9,8 @@ $slider_2_caption = get_post_meta($captionPageId, 'slider_2_caption', true);
 $slider_3_caption = get_post_meta($captionPageId, 'slider_3_caption', true);
 $slider_4_caption = get_post_meta($captionPageId, 'slider_4_caption', true);
 $slider_5_caption = get_post_meta($captionPageId, 'slider_5_caption', true);
+$slider_6_caption = get_post_meta($captionPageId, 'slider_6_caption', true);
+$slider_7_caption = get_post_meta($captionPageId, 'slider_7_caption', true);
 $timer_speed = get_post_meta($captionPageId, 'timer_speed', true);
 if (empty($timer_speed)) {
     $timer_speed = 10000;
@@ -64,6 +66,26 @@ if (empty($timer_speed)) {
                     <?php
                     if (!empty($slider_5_caption)) {
                         echo '<div class="orbit-caption">' . $slider_5_caption . '</div>';
+                    } else {
+                        echo '';
+                    }
+                    ?>
+                </li>
+                <li class="active">
+                    <img src="/wp-content/uploads/slider_6.jpg" width="1000" height="365" alt="Slider 6" />
+                    <?php
+                    if (!empty($slider_6_caption)) {
+                        echo '<div class="orbit-caption">' . $slider_6_caption . '</div>';
+                    } else {
+                        echo '';
+                    }
+                    ?>
+                </li>
+                <li class="active">
+                    <img src="/wp-content/uploads/slider_7.jpg" width="1000" height="365" alt="Slider 7" />
+                    <?php
+                    if (!empty($slider_7_caption)) {
+                        echo '<div class="orbit-caption">' . $slider_7_caption . '</div>';
                     } else {
                         echo '';
                     }
