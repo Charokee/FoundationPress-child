@@ -148,10 +148,10 @@ if (empty($timer_speed)) {
         </div>
         <div class="small-12 columns">
             <a href="#stundenplan" name="stundenplan"></a>
-            <?php echo do_shortcode("[tt_timetable event_category='grosser-raum' filter_style='tabs' filter_kind='event_category' filter_label='' time_format='H:i' hide_hours_column='1' show_end_hour='1' event_layout='3' box_bg_color='B61E23' box_hover_bg_color='801619' filter_color='B61E23' hide_empty='1' disable_event_url='1' row_height='50' id='bigRoom' font_custom='Open Sans' font_size='11']"); ?>
+            <?php echo do_shortcode("[tt_timetable event_category='sonnenraum' filter_style='tabs' filter_kind='event_category' filter_label='' time_format='H:i' hide_hours_column='1' show_end_hour='1' event_layout='3' box_bg_color='B61E23' box_hover_bg_color='801619' filter_color='B61E23' hide_empty='1' disable_event_url='1' row_height='50' id='bigRoom' font_custom='Open Sans' font_size='11']"); ?>
         </div>
         <div class="small-12 columns">
-            <?php echo do_shortcode("[tt_timetable event_category='kleiner-raum' filter_style='tabs' filter_kind='event_category' filter_label='' time_format='H:i' hide_hours_column='1' show_end_hour='1' event_layout='3' box_bg_color='B61E23' box_hover_bg_color='801619' filter_color='B61E23' hide_empty='1' disable_event_url='1' row_height='50' id='smallRoom' font_custom='Open Sans' font_size='11']"); ?>
+            <?php echo do_shortcode("[tt_timetable event_category='mondraum' filter_style='tabs' filter_kind='event_category' filter_label='' time_format='H:i' hide_hours_column='1' show_end_hour='1' event_layout='3' box_bg_color='B61E23' box_hover_bg_color='801619' filter_color='B61E23' hide_empty='1' disable_event_url='1' row_height='50' id='smallRoom' font_custom='Open Sans' font_size='11']"); ?>
         </div>
     </section>
 </div>
